@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/styles-mobile.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -56,6 +55,94 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-open" data-menu-open type="button">
+          <svg class="menu-icon" width="30" height="19">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="container-top">
+          <button class="menu-close" data-menu-close type="button">
+            <svg class="cross-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-li">
+                <a href="./index.html" class="mob-menu-link current">Studio</a>
+              </li>
+              <li class="mob-menu-li">
+                <a href="./portfolio.html" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-li">
+                <a href="" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+
+          <div class="container-low">
+          <address class="address-mob-menu">
+            <ul class="mob-menu-list-address list">
+
+               <li class="mob-menu-li-address">
+                <a href="tel:+110001111111" class="mob-menu-link-address"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="mob-menu-li-address">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+
+            </ul>
+          </address>
+
+          <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-instagram5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-twitter6"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-facebook7"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-linkedin8"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -134,7 +221,56 @@
             </li>
           </ul>
         </div>
+
+        <div class="mob-features">
+        <div class="container">
+          <h2 class="visually-hidden mob-title">Our advantages</h2>
+          <ul class="mob-feature-list">
+            <li class="mob-feature-list-item">
+              <div class="feature-card">
+                <h3 class="mob-section-feature-title">Strategy</h3>
+                <p class="mob-section-feature-description">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
+            </li>
+
+            <li class="mob-feature-list-item">
+              <div class="feature-card">
+                <h3 class="mob-section-feature-title">Punctuality</h3>
+                <p class="mob-section-feature-description">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </div>
+            </li>
+
+            <li class="mob-feature-list-item">
+              <div class="feature-card">
+                <h3 class="mob-section-feature-title">Diligence</h3>
+                <p class="mob-section-feature-description">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
+            </li>
+
+            <li class="mob-feature-list-item">
+              <div class="feature-card">
+                <h3 class="mob-section-feature-title">Technologies</h3>
+                <p class="mob-section-feature-description">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
       </section>
+
+
 
       <section class="section-doing">
         <div class="container">
@@ -145,6 +281,7 @@
               <img
                 src="./images/img1.jpg"
                 alt="web-design"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -154,6 +291,7 @@
               <img
                 src="./images/img2.jpg"
                 alt="telegram-bot"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -163,6 +301,7 @@
               <img
                 src="./images/img3.jpg"
                 alt="applications"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -180,6 +319,7 @@
               <img
                 src="./images/img4.jpg"
                 alt="Mark Guerrero Product Designer"
+                srcset="./images/img4.jpg 1x, ./images/img4-1.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -235,6 +375,7 @@
               <img
                 src="./images/img5.jpg"
                 alt="Tom Ford Frontend Developer"
+                srcset="./images/img5.jpg 1x, ./images/img5-1.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -290,6 +431,7 @@
               <img
                 src="./images/img6.jpg"
                 alt="Camila Garcia Marketing"
+                srcset="./images/img6.jpg 1x, ./images/img6-1.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -345,6 +487,7 @@
               <img
                 src="./images/img7.jpg"
                 alt="Daniel Wilson UI Designer"
+                srcset="./images/img7.jpg 1x, ./images/img7-1.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -612,5 +755,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

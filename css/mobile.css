@@ -1,0 +1,69 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+
+   .section-specialists > .container {
+    max-width: 294px;
+  }
+
+  .hero-title {
+  color: var(--title-text-color);
+  margin: 0 auto;
+  padding-top: 0;
+  margin-bottom: 72px;
+  width: 496px;
+  font-size: 56px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.section-feature {
+  margin-top: 96px;
+}
+
+.mob-section-feature-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.mob-section-feature-description {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  padding-bottom: 0;
+  letter-spacing: 0.02em;
+}
+
+.mob-feature-list {
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+
+.mob-feature-list-item {
+  max-width: 396px;
+  padding: auto;
+  margin-bottom: 72px;
+}
+
+.mob-feature-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.visually-hidden.mob-title {
+  margin-top: 0;
+  margin-bottom: 96px;
+}
+
+
+}
