@@ -155,6 +155,12 @@
     letter-spacing: 0.02em;
   }
 
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 72px;
+  }
+
   .feature-list-item {
     width: calc((100% - 24px) / 2);
   }
