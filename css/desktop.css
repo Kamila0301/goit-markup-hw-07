@@ -3,6 +3,10 @@
     max-width: 1200px;
   }
 
+.section-doing > .container {
+   max-width: 1199px;
+}
+
   .section-header > .container {
      max-width: 1200px;
   }

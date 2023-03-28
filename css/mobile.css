@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
 .section-specialists > .container {
     max-width: 294px;
@@ -10,15 +10,6 @@
 .modal {
  max-width: 392px;
  max-height: 586px;
-}
-
-
-.container {
-  max-width: 426px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .section-header {
@@ -39,12 +30,6 @@
   text-transform: capitalize;
 }
 
-.section-feature > .container {
-    max-width: 1199px;
-  }
 
-.section-doing > .container {
-   max-width: 1199px;
-}
 
 }
