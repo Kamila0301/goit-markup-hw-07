@@ -97,11 +97,11 @@
   }
 
   .auth-nav-li {
-    margin-bottom: 12px;
+    margin-top: 12px;
   }
 
   .auth-nav-li:not(:last-child) {
-    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .auth-nav-link {
@@ -121,14 +121,15 @@
   }
 
   .section-hero {
-   
+    padding-top: 180px;
+    padding-bottom: 180px;
     text-align: center;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Dark-bg-tablet.jpg");
+      url("../images/dark-bg2x-desktop.jpg");
 
     
   }
@@ -146,10 +147,9 @@
   }
 
   .hero-title {
-    
     margin-bottom: 40px;
     font-weight: 700;
-    width: 494px;
+    width: 496px;
     font-size: 56px;
     line-height: 1.2;
     letter-spacing: 0.02em;
