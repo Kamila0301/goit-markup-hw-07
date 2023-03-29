@@ -1,12 +1,17 @@
 @media screen and (max-width: 480px) {
-  
+
+.container {
+  max-width: 426px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .section-specialists > .container {
     min-width: 294px;
   }
 
-.team-container {
-  max-width: 480px;
-}
 .modal {
  max-width: 392px;
  max-height: 586px;
@@ -17,14 +22,9 @@
 }
 
 .hero-title {
-  color: var(--title-text-color);
-  margin: 0 auto;
-  padding-top: 0;
-  margin-bottom: 72px;
   font-weight: 700;
   max-width: 428px;
-  font-size: 36px;
-  line-height: 1.1;
+  
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;

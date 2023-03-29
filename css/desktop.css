@@ -197,14 +197,19 @@
   line-height: 1.2;
 }
 
+.section-feature-description {
+  font-weight: 400;
+  max-width: 264px;
+}
+
 .feature-list {
   display: flex;
 }
 
 .feature-list-item {
-  width: calc((100% - 72px) / 3);
-  padding: auto;
-  margin-right: 24px;
+  max-width: 264px;
+
+  
 }
 
 .feature-list-item:last-child {
