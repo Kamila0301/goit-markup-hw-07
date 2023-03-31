@@ -3,7 +3,7 @@
     max-width: 768px;
   }
 
-   .mob-menu {
+  .mob-menu {
     display: none;
   }
 
@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-left: auto;
   }
 
   .site-nav-link {
@@ -93,7 +92,6 @@
 
   .auth-nav .list {
     margin-left: auto;
-    
   }
 
   .auth-nav-li {
@@ -121,17 +119,15 @@
   }
 
   .section-hero {
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/dark-bg2x-desktop.jpg");
-
-    
+      url("../images/Dark-bg-tablet.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -156,8 +152,8 @@
   }
 
   .section-feature-title {
-  text-align: left;
-}
+    text-align: left;
+  }
 
   .feature-list {
     display: flex;
@@ -217,14 +213,14 @@
   }
 
   .footer-logo {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
 
-.section-text {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: left;
-}
+  .section-text {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 
   .footer-logo {
     margin: 0;
@@ -235,13 +231,13 @@
   }
 
   .form-modal {
-   flex-direction: row;
+    flex-direction: row;
     gap: 24px;
   }
 
   .footer-reference {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
 
   .footer-email {
     width: 264px;
