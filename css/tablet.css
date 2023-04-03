@@ -280,11 +280,11 @@
 
 .flex-container {
   justify-content: center;
-  width: calc((100% - 24px) / 2);
 }
 
 .flex-element {
   margin-bottom: 72px;
+  width: calc((100% - 24px) / 2);
 }
 
 .flex-element:nth-child(2n) {
@@ -293,6 +293,10 @@
 
 .flex-element:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+.flex-element:last-child {
+  text-align: left;
 }
 
 
