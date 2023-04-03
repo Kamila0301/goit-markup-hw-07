@@ -784,13 +784,14 @@ a.icon-card {
 }
 
 .list-portfolio {
-  padding-left: 12px;
-  padding-right: 12px;
+
   list-style: none;
-  margin-bottom: 72px;
-  margin-top: 96px;
+  margin-bottom: 48px;
+  margin-top: 48px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 24px 16px;
 }
 
 .flex-container {
@@ -907,14 +908,6 @@ a.icon-card {
   letter-spacing: 0.04em;
   cursor: pointer;
   text-align: center;
-}
-
-.button-list {
-  margin-right: 24px;
-}
-
-.button-list:last-child {
-  margin-right: 0;
 }
 
 .button.primary {

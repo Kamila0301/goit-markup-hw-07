@@ -337,6 +337,14 @@
 .subscribe {
   margin-left: 0;
 }
+
+/*------------------------------------------ Portfolio ------------------------------------------------*/
+
+ .list-portfolio {
+  margin-bottom: 100px;
+  margin-top: 72px;
+  justify-content: center;
+}
 }
 
 

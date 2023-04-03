@@ -14,14 +14,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
-     <body class="page">
-    <header class="section-header-portfolio">
-      <div class="container header-container portfolio">
+  <body class="page">
+    <header class="section-header">
+      <div class="container header-container">
         <nav class="site-nav">
           <a class="logo" href="./index.html"
-            >Web<span class="span">Studio</span></a>
+            >Web<span class="span">Studio</span></a
+          >
           <ul class="site-nav list">
             <li class="site-nav-li">
               <a href="./index.html" class="site-nav-link">Studio</a>
@@ -35,18 +39,100 @@
           </ul>
         </nav>
 
-      <address class="address">
+        <address class="address">
           <ul class="auth-nav list">
             <li class="auth-nav-li">
               <a href="mailto:info@devstudio.com" class="auth-nav-link"
-                >info@devstudio.com</a>
+                >info@devstudio.com</a
+              >
             </li>
             <li class="auth-nav-li">
               <a href="tel:+110001111111" class="auth-nav-link"
-                >+11 (000) 111-11-11</a>
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
-      </address>
+        </address>
+
+        <button class="menu-open" data-menu-open type="button">
+          <svg class="menu-icon" width="30" height="19">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <button class="menu-close" data-menu-close type="button">
+            <svg class="cross-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-li">
+                <a href="./index.html" class="mob-menu-link current">Studio</a>
+              </li>
+              <li class="mob-menu-li">
+                <a href="./portfolio.html" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-li">
+                <a href="" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address-mob-menu">
+            <ul class="mob-menu-list-address list">
+              <li class="mob-menu-li-address">
+                <a href="tel:+110001111111" class="mob-menu-link-address"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="mob-menu-li-address">
+                <a href="mailto:info@devstudio.com" class="mob-menu-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-instagram5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-twitter6"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-facebook7"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-icons link">
+                <svg class="mob-menu-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-linkedin8"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   
@@ -83,31 +169,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x"
+          srcset="
+          ./images/img9.jpg 1x, 
+          ./images/img9-2x.jpg 2x"
           media="(min-width: 1200px)">
-        </picture>
 
-        <picture>
           <source
-          srcset="./images/img9-mob.jpg 1x, ./images/img9-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img9-tab.jpg 1x, 
+          ./images/img9-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img9-tab.jpg 1x, ./images/img9-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img9-mob.jpg 1x, 
+          ./images/img9-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img9.jpg"
+          src="./images/img9-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img9.jpg"
-          alt="Banking Apps"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -128,30 +211,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img10.jpg 1x, ./images/img10-2x.jpg 2x"
+          srcset="
+          ./images/img10.jpg 1x, 
+          ./images/img10-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img10-mob.jpg 1x, ./images/img10-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img10-tab.jpg 1x, 
+          ./images/img10-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img10-tab.jpg 1x, ./images/img10-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img10-mob.jpg 1x, 
+          ./images/img10-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img10.jpg"
+          src="./images/img10-mob.jpg"
           alt="Banking Apps"
-          width="360">
-
+          class="work-examples-item-link-image">
         </picture>
-        <img
-          src="./images/img10.jpg"
-          alt="Cashless Payment"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -172,30 +253,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img11.jpg 1x, ./images/img11-2x.jpg 2x"
+          srcset="
+          ./images/img11.jpg 1x, 
+          ./images/img11-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img11-mob.jpg 1x, ./images/img11-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img11-tab.jpg 1x, 
+          ./images/img11-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img11-tab.jpg 1x, ./images/img11-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img11-mob.jpg 1x, 
+          ./images/img11-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img11.jpg"
+          src="./images/img11-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img11.jpg"
-          alt="Meditaion App"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -216,30 +295,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img12.jpg 1x, ./images/img12-2x.jpg 2x"
+          srcset="
+          ./images/img12.jpg 1x, 
+          ./images/img12-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img12-mob.jpg 1x, ./images/img12-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img12-tab.jpg 1x, 
+          ./images/img12-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img12-tab.jpg 1x, ./images/img12-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img12-mob.jpg 1x, 
+          ./images/img12-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img12.jpg"
+          src="./images/img12-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img12.jpg"
-          alt="Taxi Service"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -260,30 +337,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img13.jpg 1x, ./images/img13-2x.jpg 2x"
+          srcset="
+          ./images/img13.jpg 1x, 
+          ./images/img13-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img13-mob.jpg 1x, ./images/img13-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img13-tab.jpg 1x, 
+          ./images/img13-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img13-tab.jpg 1x, ./images/img13-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img13-mob.jpg 1x, 
+          ./images/img13-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img13.jpg"
+          src="./images/img13-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img13.jpg"
-          alt="Screen Illustrations"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -304,30 +379,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img14.jpg 1x, ./images/img14-2x.jpg 2x"
+          srcset="
+          ./images/img14.jpg 1x, 
+          ./images/img14-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img14-mob.jpg 1x, ./images/img14-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img14-tab.jpg 1x, 
+          ./images/img14-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img14-tab.jpg 1x, ./images/img14-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img14-mob.jpg 1x, 
+          ./images/img14-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img14.jpg"
+          src="./images/img14-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img14.jpg"
-          alt="Online Courses"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -348,30 +421,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img15.jpg 1x, ./images/img15-2x.jpg 2x"
+          srcset="
+          ./images/img15.jpg 1x, 
+          ./images/img15-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img15-mob.jpg 1x, ./images/img15-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img15-tab.jpg 1x, 
+          ./images/img15-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img15-tab.jpg 1x, ./images/img15-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img15-mob.jpg 1x, 
+          ./images/img15-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img15.jpg"
+          src="./images/img15-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img15.jpg"
-          alt="Instagram Stories Concept"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -392,30 +463,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img16.jpg 1x, ./images/img16-2x.jpg 2x"
+          srcset="
+          ./images/img16.jpg 1x, 
+          ./images/img16-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img16-mob.jpg 1x, ./images/img16-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img16-tab.jpg 1x, 
+          ./images/img16-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img16-tab.jpg 1x, ./images/img16-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img16-mob.jpg 1x, 
+          ./images/img16-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img16.jpg"
+          src="./images/img16-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img16.jpg"
-          alt="Organic Food"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -436,30 +505,28 @@
         <a href=""></a>
         <picture>
           <source
-          srcset="./images/img17.jpg 1x, ./images/img17-2x.jpg 2x"
+          srcset="
+          ./images/img17.jpg 1x, 
+          ./images/img17-2x.jpg 2x"
           media="(min-width: 1200px)">
 
-          <picture>
           <source
-          srcset="./images/img17-mob.jpg 1x, ./images/img17-mob-2x.jpg 2x"
-          media="(min-width: 768px)">
-        </picture>
+          srcset="
+          ./images/img17-tab.jpg 1x, 
+          ./images/img17-tab-2x.jpg 2x"
+          media="(max-width: 1199px)">
 
-        <picture>
           <source
-          srcset="./images/img17-tab.jpg 1x, ./images/img17-tab-2x.jpg 2x"
-          media="(min-width: 767px)">
+          srcset="
+          ./images/img17-mob.jpg 1x, 
+          ./images/img17-mob-2x.jpg 2x"
+          media="(max-width: 767px)">
 
           <img
-          src="./images/img17.jpg"
+          src="./images/img17-mob.jpg"
           alt="Banking Apps"
-          width="360">
+          class="work-examples-item-link-image">
         </picture>
-
-        <img
-          src="./images/img17.jpg"
-          alt="Fresh Coffee"
-          width="360">
 
           <p class="image-text">
             14 Stylish and User-Friendly App Design Concepts · 
@@ -481,22 +548,20 @@
 </main>
 
    <footer class="section-footer">
-    <section class="footer-information">
-        <div class="container">
+      <div class="container">
         <div class="footer-logo">
-        <a class="logo">Web<span class="span-footer">Studio</span></a>
-        <p class="section-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+          <a class="logo-footer">Web<span class="span-footer">Studio</span></a>
+          <p class="section-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
         </div>
-        
-        
-          <div class="footer-reference">
+
+        <div class="footer-reference">
           <h3 class="footer-title">Social media</h3>
 
           <ul class="footer-list list">
-          <li class="footer-item">
+            <li class="footer-item">
               <a href="" class="footer-link link">
                 <svg class="footer-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-instagram5"></use>
@@ -527,26 +592,32 @@
                 </svg>
               </a>
             </li>
-            </ul>
-            </div>
-
-             <div class="footer-modal">
-          <h3 class="footer-title">Subscribe</h3>
-
-          <div class="sub">
-          <label>
-           <input name="user-post" id="footer-email" class="footer-email" placeholder="E-mail">
-          </label>
-          <button type="submit" class="subscribe">Subscribe
-          <svg class="frame-icon" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-Frame"></use>
-          </svg>
-          </button>
-          </div>
-          </div>
-          
+          </ul>
         </div>
-      </section>
+
+        <div class="footer-modal">
+          <p class="footer-title">Subscribe</p>
+
+          <form class="form-modal">
+            <input
+              name="user-post"
+              aria-label="Email"
+              class="footer-email"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="subscribe">
+              Subscribe
+              <svg class="frame-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -269,4 +269,21 @@
     max-width: 408px;
     width: 100%;
   }
+
+ /*------------------------------------------ Portfolio ------------------------------------------------*/
+
+ .list-portfolio {
+  margin-bottom: 64px;
+  margin-top: 64px;
+  justify-content: center;
+}
+
+.button-list {
+  margin-right: 24px;
+}
+
+.button-list:last-child {
+  margin-right: 0;
+}
+
 }
