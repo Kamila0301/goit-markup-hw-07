@@ -278,12 +278,34 @@
   justify-content: center;
 }
 
+.flex-container {
+  justify-content: center;
+  width: calc((100% - 24px) / 2);
+}
+
+.flex-element {
+  margin-bottom: 72px;
+}
+
+.flex-element:nth-child(2n) {
+  margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+
 .button-list {
   margin-right: 24px;
 }
 
 .button-list:last-child {
   margin-right: 0;
+}
+
+.list-container {
+  margin-bottom: 96px;
 }
 
 }
