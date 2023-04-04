@@ -44,7 +44,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -779,15 +779,18 @@ a.icon-card {
 
 /*------------------------------------------ Portfolio ------------------------------------------------*/
 
-.section-header-portfolio {
+.section-header {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.list-portfolio {
+.section-main {
+ padding-bottom: 48px;
+ padding-top: 48px;
+}
 
-  list-style: none;
+.list-portfolio {
   margin-bottom: 48px;
-  margin-top: 48px;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -801,7 +804,6 @@ a.icon-card {
 }
 
 .flex-element {
-  margin-right: 24px;
   margin-bottom: 48px;
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -911,12 +913,7 @@ a.icon-card {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons {
-  margin-top: 96px;
-  margin-bottom: 72px;
-  padding: 0;
-  width: 1188px;
-}
+
 
 .backdrop {
   position: fixed;
